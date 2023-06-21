@@ -7,25 +7,24 @@
     <ContentPage.Resources>
         <StyleSheet Source="styles.css"/>
     </ContentPage.Resources>
-    <!--<ContentPage.Content>
 
-        
-        
-        <StackLayout Orientation="Vertical" BackgroundColor="LightBlue">
+    <ContentPage.Content>
+
+        <StackLayout Orientation="Vertical">
 
             <StackLayout Orientation="Horizontal">
-                <Label Text="Сумма кредита:" FontSize="18" VerticalOptions="Start" HorizontalOptions="Start" Margin="30"/>
-                <Entry x:Name ="LoanEntry" Placeholder="Введите сумму кредита" VerticalOptions="Start" HorizontalOptions="Start" Margin="10"/>
+                <Label Text="Сумма кредита:" VerticalOptions="Start" HorizontalOptions="Start" Margin="30,20,0,0"/>
+                <Entry x:Name ="Summa" MaxLength="6" Placeholder="Сумму кредита" StyleId="entry" VerticalOptions="Start" HorizontalOptions="Start" Margin="20"/>
             </StackLayout>
 
             <StackLayout Orientation="Horizontal">
-                <Label Text="На сколько месяцев:" FontSize="18" VerticalOptions="Start" HorizontalOptions="Start" Margin="30"/>
-                <Entry x:Name ="MonthEntry" Placeholder="Введите срок в месяцах" VerticalOptions="Start" HorizontalOptions="FillAndExpand" Margin="10"/>
+                <Label Text="Срок     (месяцев):" VerticalOptions="Start" HorizontalOptions="Start" Margin="30,10,0,30"/>
+                <Entry x:Name ="Months" MaxLength="3" Placeholder="На сколько месяцев" VerticalOptions="Start" StyleId="entry" HorizontalOptions="FillAndExpand" Margin="20"/>
             </StackLayout>
 
             <StackLayout Orientation="Horizontal">
-                <Label Text="Вид платежа" FontSize="18" VerticalOptions="Start" HorizontalOptions="Start" Margin="30"/>
-                <Picker x:Name="PaymentTypePicker"  Title="Тип платежа" VerticalOptions="Start" HorizontalOptions="FillAndExpand" Margin="20" HorizontalTextAlignment="Center" SelectedIndex="0">
+                <Label Text="Тип платежа"  VerticalOptions="Start" HorizontalOptions="Start" Margin="30"/>
+                <Picker x:Name="PaymentType"  Title="Тип платежа" VerticalOptions="Start" HorizontalOptions="FillAndExpand" Margin="20" HorizontalTextAlignment="Center" SelectedIndex="0">
                     <Picker.Items>
                         <x:String>Аннуитетный</x:String>
                     </Picker.Items>
@@ -34,24 +33,23 @@
 
             <StackLayout>
                 <Label Text="Процентная ставка" FontSize="16" VerticalOptions="Start" HorizontalOptions="Start"  Margin="20,0,20,0"/>
-                <Slider x:Name="Slider" ValueChanged="SliderValueChange"  Minimum="0" Maximum="100" ThumbColor="Black" MaximumTrackColor="Blue" MinimumTrackColor="Red" Value="5"/>
+                <Slider x:Name="Slider" ValueChanged="SliderValueChange"  Minimum="0" Maximum="100" ThumbColor="Black" MaximumTrackColor="Yellow" MinimumTrackColor="Red" Value="5"/>
                 <Label x:Name="SliderLabel" Text="5%"  Margin="20,0,20,0" VerticalTextAlignment="Center" VerticalOptions="Center" HorizontalTextAlignment="Center"/>
             </StackLayout>
 
             <StackLayout>
-                <Label x:Name="MonthlyPaymentLabel" Text="Ежемесячный платеж:" VerticalOptions="Center"  FontSize="20" Margin="20,40,20,20"/>
+                <Label x:Name="EveryMonth" Text="Ежемесячный платеж:" VerticalOptions="Center"  FontSize="20" Margin="20,40,20,20"/>
             </StackLayout>
 
             <StackLayout>
-                <Label x:Name="TotalLabel" Text="Общая сумма:" VerticalOptions="Center" FontSize="20" Margin="20,0,20,20"/>
+                <Label x:Name="Total" Text="Общая сумма:" VerticalOptions="Center" FontSize="20" Margin="20,0,20,20"/>
             </StackLayout>
 
             <StackLayout>
-                <Label x:Name="OverpaymentLabel" Text="Переплата:" VerticalOptions="Center" FontSize="20" Margin="20,0,20,20"/>
+                <Label x:Name="Overpayment" Text="Переплата:" VerticalOptions="Center" FontSize="20" Margin="20,0,20,20"/>
             </StackLayout>
 
         </StackLayout>
 
-    </ContentPage.Content>-->
-
+    </ContentPage.Content>
 </ContentPage>

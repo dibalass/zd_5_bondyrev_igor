@@ -8,34 +8,34 @@
     <ContentPage.Resources>
         <StyleSheet Source="styles.css"/>
     </ContentPage.Resources>
-    
-    <!--<ContentPage.Content>
 
-        <StackLayout Orientation="Horizontal" BackgroundColor="LightBlue">
+    <ContentPage.Content>
+
+
+        <StackLayout Orientation="Horizontal">
 
             <StackLayout Orientation="Vertical">
 
-                <Label Text="Центральный банк РФ:" Margin="20"/>
+                <Label Text="Центральный банк РФ:" Margin="30,10,0,0"/>
 
                 <StackLayout Orientation="Horizontal">
-                    <Label Text="USD" FontSize="Large" Margin="7"/>
-                    <Entry x:Name="usdEntry" Placeholder="Введите курс доллара" TextChanged="USDChanged" MaxLength="5"/>
+                    <Label Text="USD" Margin="10,10,0,0" WidthRequest="80"/>
+                    <Entry x:Name="USD" Placeholder="Курс доллара" TextColor="Black" MaxLength="4" 
+                           TextChanged="usdEntry_TextChanged" Margin="-35,0,0,0"/>
                 </StackLayout>
 
                 <StackLayout Orientation="Horizontal">
-                    <Label Text="EUR" FontSize="Large" Margin="7,0,0,0"/>
-                    <Label x:Name="eurLabel" Text="86.000" TextDecorations="Underline" Margin="4" FontSize="16"/>
+                    <Label Text="EUR" Margin="12,0,0,0"/>
+                    <Label x:Name="EUR" Text="86.000" TextDecorations="Underline" Margin="25,0,0,0"/>
                 </StackLayout>
 
             </StackLayout>
 
             <StackLayout Orientation="Vertical">
-                <Label Text="Дата" Margin="40,20,0,0"/>
-                <DatePicker Margin="25,20,0,0"/>
+                <Label Text="Сегодняшняя дата" Margin="40,10,0,0"/>
+                <DatePicker Margin="50,0,0,0"/>
             </StackLayout>
-
         </StackLayout>
 
-    </ContentPage.Content>-->
-
+    </ContentPage.Content>
 </ContentPage>

@@ -12,80 +12,32 @@ namespace App1
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class CurrencyExchanger : ContentPage
     {
-        private Entry usdLabel;
-        private Label eurLabel;
-        private Label date;
-
-        public CurrencyExchanger (string user)
+        public CurrencyExchanger()
         {
             InitializeComponent();
-
-            double usd = 70.000;
-
-            usdLabel = new Entry
-            {
-                Text = $"{usd}",
-                FontAttributes = FontAttributes.Bold,
-                StyleId = "else",
-                Margin = new Thickness(30, 0, 0, 0)
-            };
-
-            eurLabel = new Label
-            {
-                Text = $"EUR: {double.Parse(usdLabel.Text) * 1.075}",
-                FontAttributes = FontAttributes.Bold,
-                TextDecorations = TextDecorations.Underline,
-                Margin = new Thickness(30, 0, 0, 0)
-            };
-
-            var userLabel = new Label
-            {
-                Text = $"Welcome back, {user}!",
-                FontSize = Device.GetNamedSize(NamedSize.Large, typeof(Label)),
-                HorizontalOptions = LayoutOptions.Center,
-                VerticalOptions = LayoutOptions.CenterAndExpand
-            };
-
-            date = new Label
-            {
-                Text = DateTime.Today.ToString(),
-                HorizontalTextAlignment = TextAlignment.End,
-                FontAttributes = FontAttributes.Bold,
-                TextDecorations = TextDecorations.Underline,
-                Margin = new Thickness(30, 0, 10, 0)
-            };
-
-            Content = new StackLayout
-            {
-                Children =
-                {
-                    userLabel,
-                    new Label { Text = "Центробанк РФ: ",Margin =new Thickness (30,0,50,0)},
-                    new Label { Text = "Today is: ",HorizontalTextAlignment = TextAlignment.End,Margin = new Thickness(0,0,10,0)},
-                    date,
-                    usdLabel,
-                    eurLabel
-                }
-            };
         }
-        //public CurrencyExchanger()
-        //{
-        //    InitializeComponent();
-        //}
 
-        //private void USDChanged (object sender, TextChangedEventArgs e)
-        //{
-        //    if (usdEntry.Text != "")
-        //    {
-        //        try
-        //        {
-        //            eurLabel.Text = (double.Parse(usdEntry.Text) * 1.075).ToString();
-        //        } catch (Exception)
-        //        {
-        //            this.DisplayToastAsync("Введи число");
-        //            usdEntry.Text = "";
-        //        }
-        //    }
-        //}
+        private void usdEntry_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            try
+            {
+                if (double.Parse(USD.Text) >= 0)
+                {
+                    EUR.Text = (double.Parse(USD.Text) * 1.075).ToString();
+                }
+                else
+                {
+                    DisplayAlert("Ошибка", "Значение должно быть положительным", "ОК");
+                    USD.Text = "";
+                    EUR.Text = "..";
+                }
+            }
+            catch
+            {
+                DisplayAlert("Ошибка", "Введи число", "ОК");
+                USD.Text = "";
+                EUR.Text = "..";
+            }
+        }
     }
 }

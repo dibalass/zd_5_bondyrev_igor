@@ -29,19 +29,27 @@
       "System.Numerics.Vectors/4.5.0": {
         "type": "package",
         "compile": {
-          "ref/netstandard2.0/System.Numerics.Vectors.dll": {}
+          "ref/netstandard2.0/System.Numerics.Vectors.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.0/System.Numerics.Vectors.dll": {}
+          "lib/netstandard2.0/System.Numerics.Vectors.dll": {
+            "related": ".xml"
+          }
         }
       },
       "System.Reflection.Emit.ILGeneration/4.7.0": {
         "type": "package",
         "compile": {
-          "ref/netstandard2.0/System.Reflection.Emit.ILGeneration.dll": {}
+          "ref/netstandard2.0/System.Reflection.Emit.ILGeneration.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.0/System.Reflection.Emit.ILGeneration.dll": {}
+          "lib/netstandard2.0/System.Reflection.Emit.ILGeneration.dll": {
+            "related": ".xml"
+          }
         }
       },
       "System.Reflection.Emit.Lightweight/4.7.0": {
@@ -50,19 +58,27 @@
           "System.Reflection.Emit.ILGeneration": "4.7.0"
         },
         "compile": {
-          "ref/netstandard2.0/System.Reflection.Emit.Lightweight.dll": {}
+          "ref/netstandard2.0/System.Reflection.Emit.Lightweight.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.0/System.Reflection.Emit.Lightweight.dll": {}
+          "lib/netstandard2.0/System.Reflection.Emit.Lightweight.dll": {
+            "related": ".xml"
+          }
         }
       },
       "System.Runtime.CompilerServices.Unsafe/4.5.3": {
         "type": "package",
         "compile": {
-          "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
+          "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
+          "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {
+            "related": ".xml"
+          }
         }
       },
       "System.Threading.Tasks.Extensions/4.5.4": {
@@ -71,10 +87,14 @@
           "System.Runtime.CompilerServices.Unsafe": "4.5.3"
         },
         "compile": {
-          "lib/netstandard2.0/System.Threading.Tasks.Extensions.dll": {}
+          "lib/netstandard2.0/System.Threading.Tasks.Extensions.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.0/System.Threading.Tasks.Extensions.dll": {}
+          "lib/netstandard2.0/System.Threading.Tasks.Extensions.dll": {
+            "related": ".xml"
+          }
         }
       },
       "Xamarin.CommunityToolkit/2.0.6": {
@@ -85,10 +105,14 @@
           "Xamarin.Forms": "5.0.0.2291"
         },
         "compile": {
-          "lib/netstandard2.0/Xamarin.CommunityToolkit.dll": {}
+          "lib/netstandard2.0/Xamarin.CommunityToolkit.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.0/Xamarin.CommunityToolkit.dll": {}
+          "lib/netstandard2.0/Xamarin.CommunityToolkit.dll": {
+            "related": ".xml"
+          }
         }
       },
       "Xamarin.Essentials/1.6.1": {
@@ -97,23 +121,35 @@
           "System.Numerics.Vectors": "4.5.0"
         },
         "compile": {
-          "lib/netstandard2.0/Xamarin.Essentials.dll": {}
+          "lib/netstandard2.0/Xamarin.Essentials.dll": {
+            "related": ".pdb;.xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.0/Xamarin.Essentials.dll": {}
+          "lib/netstandard2.0/Xamarin.Essentials.dll": {
+            "related": ".pdb;.xml"
+          }
         }
       },
       "Xamarin.Forms/5.0.0.2291": {
         "type": "package",
         "compile": {
-          "lib/netstandard2.0/Xamarin.Forms.Core.dll": {},
+          "lib/netstandard2.0/Xamarin.Forms.Core.dll": {
+            "related": ".pdb;.xml"
+          },
           "lib/netstandard2.0/Xamarin.Forms.Platform.dll": {},
-          "lib/netstandard2.0/Xamarin.Forms.Xaml.dll": {}
+          "lib/netstandard2.0/Xamarin.Forms.Xaml.dll": {
+            "related": ".pdb;.xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.0/Xamarin.Forms.Core.dll": {},
+          "lib/netstandard2.0/Xamarin.Forms.Core.dll": {
+            "related": ".pdb;.xml"
+          },
           "lib/netstandard2.0/Xamarin.Forms.Platform.dll": {},
-          "lib/netstandard2.0/Xamarin.Forms.Xaml.dll": {}
+          "lib/netstandard2.0/Xamarin.Forms.Xaml.dll": {
+            "related": ".pdb;.xml"
+          }
         },
         "build": {
           "buildTransitive/Xamarin.Forms.props": {},
@@ -814,31 +850,32 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\305-12\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
+    "C:\\Users\\dibalas\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\305-12\\Desktop\\bondyrev\\App1\\App1\\App1.csproj",
+      "projectUniqueName": "C:\\Users\\dibalas\\Desktop\\zd5\\App1\\App1\\App1.csproj",
       "projectName": "App1",
-      "projectPath": "C:\\Users\\305-12\\Desktop\\bondyrev\\App1\\App1\\App1.csproj",
-      "packagesPath": "C:\\Users\\305-12\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\305-12\\Desktop\\bondyrev\\App1\\App1\\obj\\",
+      "projectPath": "C:\\Users\\dibalas\\Desktop\\zd5\\App1\\App1\\App1.csproj",
+      "packagesPath": "C:\\Users\\dibalas\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\dibalas\\Desktop\\zd5\\App1\\App1\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\305-12\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        "C:\\Users\\dibalas\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netstandard2.0"
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -882,11 +919,12 @@
           "net47",
           "net471",
           "net472",
-          "net48"
+          "net48",
+          "net481"
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.408\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
       }
     }
   }

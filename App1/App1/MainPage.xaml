@@ -5,13 +5,34 @@
     <ContentPage.Resources>
         <StyleSheet Source="styles.css"/>
     </ContentPage.Resources>
-</ContentPage>
 
-<!--<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:App1"
-            x:Class="App1.MainPage">
-    <TabbedPage.Children>
-        <local:Calc/>
-        <local:CurrencyExchanger/>
-    </TabbedPage.Children>
-</TabbedPage>-->
+    <StackLayout Orientation="Vertical" HorizontalOptions="Center">
+        
+        <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+            <Label x:Name="header" StyleId="header" Text="Добро пожаловать" FontSize="25" />
+        </StackLayout>
+        
+        <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+            <Entry x:Name="Login" Placeholder="Логин" StyleId="entry" HorizontalOptions="Center" WidthRequest="400" Margin="0,20,0,0" />
+        </StackLayout>
+
+        <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+            <Entry x:Name="Password" Placeholder="Пароль" StyleId="entry" HorizontalOptions="Center" WidthRequest="400" Margin="0,10,0,0"/>
+        </StackLayout>
+
+        <StackLayout Orientation="Horizontal" >
+            <CheckBox x:Name="CheckBox" Margin="0,10,0,0" HorizontalOptions="Center" Color="White"/>
+            <Label Text="Запомнить" Margin="0,15,0,0" HorizontalOptions="Center"/>
+            <Label Text="Забыли пароль?" Margin="150,15,0,0"/>
+        </StackLayout>
+
+        <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+            <Button x:Name="LogButton" StyleId="button" Text="Войти" WidthRequest="300" Clicked="LogButton_Clicked" Margin="0,50,0,0"/>
+        </StackLayout>
+        
+        <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+            <Button x:Name="Changer" StyleId="button" Text="Поменять курс" WidthRequest="300" Clicked="Change_click" Margin="0,10,0,0"/>
+        </StackLayout>
+
+    </StackLayout>
+</ContentPage>
